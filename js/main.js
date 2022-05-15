@@ -52,7 +52,7 @@ function show(e) {
 closeBtn.addEventListener('click', close);
 function close() {
   slider.style.display = 'none';
-  document.body.style.overflow = 'scroll';
+  document.body.style.overflowY = 'scroll';
 };
 // next and previous image
 nextBtn.addEventListener('click', function () { slide(1) });
@@ -72,7 +72,7 @@ function slide(i) {
 let box = document.querySelector('.box');
 slider.addEventListener('click', function (e) {
   slider.style.display = 'none';
-  document.body.style.overflow = 'scroll';
+  document.body.style.overflowY = 'scroll';
 });
 box.addEventListener('click', function (e) {
   e.stopPropagation();
